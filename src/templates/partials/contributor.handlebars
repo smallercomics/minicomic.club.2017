@@ -1,0 +1,14 @@
+<div class="contributor">
+    <a href="{{ firstkeyval links }}"><img class="profile "src="./img/{{ image }}" /></a>
+    <div class="info">
+        <h2>{{  name  }}</h2>
+        <ul class="links">
+            {{#each links}}
+                <li><a href="{{this}}" target="_blank">{{@key}}</a></li>
+            {{/each}}
+            {{#if interview }}
+                <li class="interview"><span>&#10039;</span><a href="{{interview.link}}" target="_blank">{{interview.title}}</a><span>&#10039;</span></li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

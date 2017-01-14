@@ -1,0 +1,25 @@
+{
+  "name": "minicomic.club.2015",
+  "version": "1.0.0",
+  "description": "Minisite for the 2017 minicomic.club",
+  "main": "index.js",
+  "keywords": [
+    "minicomic"
+  ],
+  "author": "andrew@bundle.com.au",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-handlebars-html": "^0.0.2",
+    "gulp-image": "^2.7.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-template": "^4.0.0",
+    "gulp-uglify": "^2.0.0",
+    "handlebars": "^4.0.6"
+  }
+}

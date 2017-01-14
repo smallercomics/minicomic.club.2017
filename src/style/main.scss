@@ -1,0 +1,230 @@
+@import 'normalize';
+
+body{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-family: "droid-serif",serif;
+}
+
+section{
+    clear:both;
+    overflow:hidden;
+}
+
+footer{
+    font-size:0.8em;
+    a{
+        color:black;
+    }
+}
+
+section > .inner, footer > .inner{
+    padding: 0 1em 0 1em;
+    @media screen and (min-width: 768px){
+        width:600px;
+        margin:0 auto;
+    }
+}
+
+.banner{
+    img{
+        display:none;
+    }
+    div{
+        display:block;
+        height:100px;
+        background-image:url(./img/banner.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    
+
+    @media screen and (min-width: 500px){
+        height:auto;
+        img{
+            display:block;
+            width:100%;
+        }
+        div{
+            display:none;
+        }
+    }
+
+}
+
+.content-banner{
+    img{
+        width:100%;
+    }
+}
+
+h1{
+    text-align:center;
+    font-family: "cubano",sans-serif;
+    height:42px;
+    background-image:url(./img/title.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    text-indent:-99999px;
+}
+section.callout{
+    background-color:#333;
+    color:white;
+
+    padding: 1em 0 1em 0;
+
+    p{
+        margin:0;
+        padding:0;
+    }
+    a{
+        color:white;
+    }
+}
+.previous-contributor{
+    width:100%;
+    margin-bottom:0.6em;
+
+    @media screen and (min-width: 500px){
+        width:50%;
+        float:left;
+        &:nth-child(2n+3){
+            clear:left;
+        }
+    }
+
+     @media screen and (min-width: 900px){
+        width:33%;
+        float:left;
+        &:nth-child(2n+3){
+            clear:none;
+        }
+        &:nth-child(3n+4){
+            clear:left;
+        }
+    }
+
+    h2{
+        font-size:1em;
+        font-family: "cubano",sans-serif;
+        margin:0;
+        
+    }
+    h3{
+        font-size:0.8em;
+        margin:0;
+        font-style: italic;
+        a{
+            color:black;
+            text-decoration:none;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+    img.profile{
+        max-width:100%;
+    }
+    .info{
+        padding: 0 1em 0 0;
+    }
+}
+.contributor{
+    
+    h2{
+        font-family: "cubano",sans-serif;
+        margin:0;
+    }
+    img.profile{
+        max-width:100%;
+    }
+    .info{
+        padding: 0 1em 0 1em;
+    }
+
+    width:100%;
+    @media screen and (min-width: 768px){
+        width:50%;
+        float:left;
+        &:nth-child(2n+3){
+            clear:left;
+        }
+    }
+    margin-bottom:2em;
+
+    .links{
+        margin:0;
+        padding:0;
+        li{
+            margin:0;
+            padding:0;
+            display:inline;
+            a{
+                color:black;
+                font-style: italic;
+            }
+
+            &.interview{
+                span{
+                    color:red;
+                }
+            }
+        }
+    }
+}
+
+.subscribe-button{
+    padding:4px 8px;
+    background-color:#F73E1A;
+    color:white;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+p{
+    line-height:1.5em;
+    strong{
+        font-family: "cubano",sans-serif;
+    }
+}
+
+
+#scroll-header{
+    position:fixed;
+    left:0;
+    top:-50px;
+    width:100%;
+    background-color:white;
+    overflow:hidden;
+
+    transition: top 1s;
+    box-shadow: 0px 6px 18px 0px rgba(50, 50, 50, 0.25);
+
+    &.visible{
+        top:0;
+    }
+    a{
+        float:right;
+    }
+    img{
+        height:36px;
+    }
+    a{
+        line-height:36px;
+    }
+
+    @media screen and (max-width: 520px){
+        img{
+            height:22px;
+            margin-top:2px;
+        }
+        a{
+            line-height:22px;
+            font-size:10px;
+        }
+    }
+}
