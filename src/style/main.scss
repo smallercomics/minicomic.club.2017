@@ -68,6 +68,10 @@ h1{
     background-repeat:no-repeat;
     background-position:center center;
     text-indent:-99999px;
+    &.no-replace{
+        background:none;
+        text-indent:0;
+    }
 }
 section.callout{
     background-color:#333;
@@ -227,4 +231,8 @@ p{
             font-size:10px;
         }
     }
+}
+
+section.content img{
+    max-width:100%!important;
 }

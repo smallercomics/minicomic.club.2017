@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         
-        <title>Minicomic of the Month Club 2017</title>
-        <meta name="description" content="An annual subscription to fine minicomics from Australian and New Zealand cartoonists and storytellers. Twelve comics from twelve artists in 2017">
+        <title>{{ title }} | Minicomic of the Month Club 2017</title>
+        <meta name="description" content="{{ description }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
         <meta property="og:title"
-              content="Minicomic of the Month Club 2017" />
+              content="{{ title }}" />
         <meta property="og:type"
               content="website"/>
         <meta property="og:url"
-              content="http://minicomic.club/2017" />
+              content="http://minicomic.club/2017/{{ url }}" />
         <meta property="og:description"
-              content="An annual subscription to fine minicomics from Australian and New Zealand cartoonists and storytellers. Twelve comics from twelve artists in 2017" />
+              content="{{ description }}" />
         <meta property="og:image"
-              content="http://minicomic.club/2017/img/share.jpg"/>
+              content="http://minicomic.club/2017/img/{{ share }}"/>
 
          <meta name="twitter:card"
                content="photo" />
@@ -27,13 +27,13 @@
         <meta name="twitter:creator"
               content = "@smallercomics" />
         <meta name="twitter:title"
-              content = "Minicomic of the Month Club 2017" />
+              content = "{{ title }}" />
         <meta name="twitter:image"
-              content = "http://minicomic.club/2017/img/share.jpg" />
+              content = "http://minicomic.club/2017/img/{{ share }}" />
 
 
         <link rel="canonical"
-              href="http://minicomic.club/2017" />
+              href="http://minicomic.club/2017/{{ url }}" />
 
         {{> typekit }}
         
@@ -49,7 +49,7 @@
        <header class="banner">
            <img src="./img/banner.jpg"/>
            <div></div>
-           <h1>Minicomic of the Month Club 2017</h1>
+           <h1 class="no-replace">{{ title }}</h1>
        </header>
        
        <header id="scroll-header">
@@ -57,26 +57,13 @@
            <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe now &raquo;</a>
        </header>
        
-       <section id="intro">
+       <section class="content">
            <div class="inner">
-            <p><strong>Minicomic.club</strong> is back for 2017, bringing you and your mailbox a years worth of minicomics and zines from some of Australia's most interesting cartoonists and comics-makers.</p>
-            <p>Sign up and get <strong>12</strong> comics over <strong>12</strong> months, one each from these beautiful people. Take a look at their work - maybe discover someone new - and <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe</a></p>
+               {{{ body }}}
             </div>
        </section>
 
-       <section id="contributors">
-            {{#each contributors}} 
-                {{> contributor }}
-            {{/each}}
-       </section>
-
-       <section id="second">
-           <div class="inner">
-               <p><strong>$38</strong> in Australia/ <strong>$42</strong> in New Zealand, and <strong>$52</strong> in the rest of the world.</p>
-                <p>The first comic will go out when subscriptions close at the end of January 2017, <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe now</a></p>
-                <p>Also if you're a new subscriber, you can catch up with our <a href="new-subscribers-giveaway.html">new subscribers giveaway!</a></p>
-            </div>
-       </section>
+       
 
        <section class="callout">
            <div class="inner">
@@ -84,16 +71,6 @@
             </div>
        </section>
 
-       <section id="previous">
-           <div class="inner">
-               <p><strong>Here's what you could be missing.</strong> Some of the comics sent out in previous seasons</p>
-            </div>
-            <div>
-                {{#each previous}} 
-                    {{> previous }}
-                {{/each}}
-            </div>
-       </section>
 
        <section class = "content-banner">
            <img src="./img/getting-mailing.jpg" title="Get a comic in the mail, put a comic in the mail" />
