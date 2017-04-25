@@ -71,6 +71,7 @@ h1{
     &.no-replace{
         background:none;
         text-indent:0;
+        height:auto;
     }
 }
 section.callout{
@@ -85,6 +86,10 @@ section.callout{
     }
     a{
         color:white;
+    }
+    &.yellow{
+        background-color:#F3EF7D;
+        color:black;
     }
 }
 .previous-contributor{
@@ -235,4 +240,35 @@ p{
 
 section.content img{
     max-width:100%!important;
+}
+
+
+#mc_embed_signup{
+    margin-top:1em;
+    label{
+        display:block;
+        font-weight:bold;
+    }
+    input{
+        display:block;
+        margin-top:4px;
+        font-family:monospace;
+        padding:4px;
+        border:0;
+        width:100%;
+    }
+    
+    #mc-embedded-subscribe{
+        background-color:#F73E1A;
+        width:auto;
+        color:white;
+    }
+
+    div.mce_inline_error,
+    .mce-success-response{
+        background-color:transparent!important;
+        padding-left:0!important;
+        color:black!important;
+        font-size:smaller!important;
+    }
 }

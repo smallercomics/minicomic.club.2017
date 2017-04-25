@@ -47,20 +47,20 @@
         {{> fb }}
         
        <header class="banner">
-           <img src="./img/banner.jpg"/>
-           <div></div>
-           <h1>Minicomic of the Month Club 2017</h1>
+            <img src="./img/banner.jpg"/>
+            <div></div>
+            <h1>Minicomic of the Month Club 2017</h1>
        </header>
        
        <header id="scroll-header">
            <img src="./img/title.jpg"/>
-           <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe now &raquo;</a>
+           <a class="subscribe-button" href="#subscribe">subscribe now &raquo;</a>
        </header>
        
        <section id="intro">
            <div class="inner">
             <p><strong>Minicomic.club</strong> is back for 2017, bringing you and your mailbox a years worth of minicomics and zines from some of Australia's most interesting cartoonists and comics-makers.</p>
-            <p>Sign up and get <strong>12</strong> comics over <strong>12</strong> months, one each from these beautiful people. Take a look at their work - maybe discover someone new - and <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe</a></p>
+            <p>Sign up and get <strong>12</strong> comics over <strong>12</strong> months, one each from these beautiful people. Take a look at their work - maybe discover someone new - and <a class="subscribe-button" href="#subscribe">subscribe</a></p>
             </div>
        </section>
 
@@ -69,18 +69,41 @@
                 {{> contributor }}
             {{/each}}
        </section>
-
-       <section id="second">
+       <section  id="subscribe">
            <div class="inner">
-               <p><strong>$38</strong> in Australia/ <strong>$42</strong> in New Zealand, and <strong>$52</strong> in the rest of the world.</p>
-                <p>The first comic will go out when subscriptions close at the end of January 2017, <a class="subscribe-button" href="http://minicomicclub.bigcartel.com/product/minicomic-club-2017-subscription">subscribe now</a></p>
-                <p>Also if you're a new subscriber, you can catch up with our <a href="new-subscribers-giveaway.html">new subscribers giveaway!</a></p>
+            <p><strong>$38</strong> in Australia/ <strong>$42</strong> in New Zealand, and <strong>$52</strong> in the rest of the world.</p>
+          </div>
+       </section>
+       <section id="second" class="callout yellow">
+           <div class="inner">
+               
+               <p><strong>Subscriptions are closed for 2017</strong> - join our mailing list and we'll keep you up to date on when the next one opens:</p>
+               
+               <!-- Begin MailChimp Signup Form -->
+               <div id="mc_embed_signup">
+                   <form action="//club.us6.list-manage.com/subscribe/post?u=49bafb7944&amp;id=c69a2158fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                   <div id="mc_embed_signup_scroll">
+                       <div class="mc-field-group">
+                           <label for="mce-EMAIL">Your email:</label>
+                           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@yourhouse">
+                        </div>
+	                <div id="mce-responses" class="clear">
+		                <div class="response" id="mce-error-response" style="display:none"></div>
+		                <div class="response" id="mce-success-response" style="display:none"></div>
+	                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_49bafb7944_c69a2158fe" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+
+<!--End mc_embed_signup-->
             </div>
        </section>
 
        <section class="callout">
            <div class="inner">
-               <p>Do you know someone else who would be into this? We'd <em>love it if you told them about it</em>, or shared us around on <a class="fb-link" href="http://facebook.com/smallercomics">Facebook</a> or <a href="https://twitter.com/intent/tweet?url=http%3A//smallercomics.com/minicomics-of-the-month/2017&via=smallercomics&text=Minicomics in the mail!">Twitter</a></p>
+               <p>Do you know someone else who would be into this? We'd <em>love it if you told them about it</em>, or shared us around on <a class="fb-link" href="http://facebook.com/minicomic.club">Facebook</a> or <a href="https://twitter.com/intent/tweet?url=http%3A//smallercomics.com/minicomics-of-the-month/2017&via=smallercomics&text=Minicomics in the mail!">Twitter</a></p>
             </div>
        </section>
 
@@ -120,5 +143,7 @@
 
        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
        <script type="text/javascript" src="./scripts.js"></script>
+       <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+       <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </body>
 </html>
