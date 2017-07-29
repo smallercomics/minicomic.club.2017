@@ -1,4 +1,4 @@
-module.exports = [
+[
 
     {
         "name": "David Blumenstein",
@@ -124,5 +124,5 @@ module.exports = [
         "link": "http://wendyjune.com.au",
         "title": "My Laksha Cat",
         "image": "IMG_5126.jpg"
-    },
+    }
 ]

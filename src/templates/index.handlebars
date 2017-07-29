@@ -18,7 +18,7 @@
         <meta property="og:description"
               content="An annual subscription to fine minicomics from Australian and New Zealand cartoonists and storytellers. Twelve comics from twelve artists in 2017" />
         <meta property="og:image"
-              content="http://minicomic.club/2017/img/share.jpg"/>
+              content="http://minicomic.club/2017/{{ asset 'share.jpg' }}"/>
 
          <meta name="twitter:card"
                content="photo" />
@@ -29,7 +29,7 @@
         <meta name="twitter:title"
               content = "Minicomic of the Month Club 2017" />
         <meta name="twitter:image"
-              content = "http://minicomic.club/2017/img/share.jpg" />
+              content = "http://minicomic.club/2017/{{ asset 'share.jpg' }}" />
 
 
         <link rel="canonical"
@@ -38,7 +38,7 @@
         {{> typekit }}
         
     <style>
-      @import url(./main.css);
+      @import url(./{{ asset 'main.css' }});
     </style>
 
     </head>
@@ -47,13 +47,13 @@
         {{> fb }}
         
        <header class="banner">
-            <img src="./img/banner.jpg"/>
+            <img src="./{{ asset 'banner.jpg' }}"/>
             <div></div>
             <h1>Minicomic of the Month Club 2017</h1>
        </header>
        
        <header id="scroll-header">
-           <img src="./img/title.jpg"/>
+           <img src="./{{ asset 'title.jpg' }}"/>
            <a class="subscribe-button" href="#subscribe">subscribe now &raquo;</a>
        </header>
        
@@ -119,7 +119,7 @@
        </section>
 
        <section class = "content-banner">
-           <img src="./img/getting-mailing.jpg" title="Get a comic in the mail, put a comic in the mail" />
+           <img src="./{{ asset 'getting-mailing.jpg' }}" title="Get a comic in the mail, put a comic in the mail" />
        </section>
 
        <section class="callout">
@@ -142,7 +142,7 @@
        {{> ga }}
 
        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-       <script type="text/javascript" src="./scripts.js"></script>
+       <script type="text/javascript" src="./{{ asset 'main.js' }}"></script>
        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </body>
