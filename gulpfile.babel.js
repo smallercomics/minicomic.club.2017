@@ -11,7 +11,6 @@ import rename from 'gulp-rename'
 import connect from 'gulp-connect'
 import rev from 'gulp-rev'
 import gulpHandlebars from 'gulp-handlebars-html'
-import revCSSUrls from 'gulp-rev-css-url'
 import concat from 'gulp-concat'
 
 import revManifestReplacer from './src/gulp/revManifestReplacer'
@@ -40,7 +39,6 @@ gulp.task('styles', ['images'], () => {
     .pipe(revManifestReplacer(JSON.parse(fs.readFileSync(`${distPath}/images.json`))))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rev())
-    .pipe(revCSSUrls())
     .pipe(gulp.dest(distPath))
     .pipe(rev.manifest({ path: 'styles.json' }))
     .pipe(gulp.dest(distPath))
