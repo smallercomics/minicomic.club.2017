@@ -1,7 +1,7 @@
-module.exports = [
+[
     {
         "name": "Leonie Brialey",
-        "image": "IMG_7738.JPG",
+        "image": "IMG_7738.jpg",
         "links": {
             "Leonie's tumblr": "http://linesloinslions.tumblr.com"
         },
@@ -129,5 +129,5 @@ module.exports = [
             "title": "Interview with Sam",
             "link": "https://medium.com/@smallercomics/sam-emery-38be274224"
         }
-    },
+    }
 ]
