@@ -20,10 +20,4 @@ Zepto(function($){
                 href: window.location.href,
         }, function(response){});
     });
-})
-
-
-
-
-  
-
+});

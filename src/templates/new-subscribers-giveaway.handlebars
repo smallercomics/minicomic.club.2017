@@ -48,7 +48,12 @@
         
        <header class="banner">
            <a href="/2017">
-            <img src="./{{ asset 'banner.jpg' }}"/>
+            <img
+                alt=""
+                src="./{{ asset 'banner.jpg' 1000 }}"
+                srcset="./{{ asset 'banner.jpg' 200 }} 200w, ./{{ asset 'banner.jpg' 400 }} 400w, ./{{ asset 'banner.jpg' 800 }} 800w,  ./{{ asset 'banner.jpg'  1000 }} 1000w"
+                sizes="100vw"
+                />
              </a>
              <div></div>
             <h1 class="no-replace">New Subscribers Giveaway</h1>

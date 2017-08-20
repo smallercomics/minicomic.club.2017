@@ -47,7 +47,12 @@
         {{> fb }}
         
        <header class="banner">
-            <img src="./{{ asset 'banner.jpg' }}"/>
+            <img
+                alt=""
+                src="./{{ asset 'banner.jpg' 1000 }}"
+                srcset="./{{ asset 'banner.jpg' 200 }} 200w, ./{{ asset 'banner.jpg' 400 }} 400w, ./{{ asset 'banner.jpg' 800 }} 800w,  ./{{ asset 'banner.jpg'  1000 }} 1000w"
+                sizes="100vw"
+                />
             <div></div>
             <h1>Minicomic of the Month Club 2017</h1>
        </header>
@@ -91,7 +96,12 @@
        </section>
 
        <section class = "content-banner">
-           <img src="./{{ asset 'getting-mailing.jpg' }}" title="Get a comic in the mail, put a comic in the mail" />
+           <img
+                alt="Get a comic in the mail, put a comic in the mail"
+                src="./{{ asset 'getting-mailing.jpg' 1000 }}"
+                srcset="./{{ asset 'getting-mailing.jpg' 200 }} 200w, ./{{ asset 'getting-mailing.jpg' 400 }} 400w, ./{{ asset 'getting-mailing.jpg' 800 }} 800w,  ./{{ asset 'getting-mailing.jpg'  1000 }} 1000w"
+                sizes="100vw"
+            />
        </section>
 
        <section class="callout">
