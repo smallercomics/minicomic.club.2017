@@ -1,5 +1,13 @@
 <div class="previous-contributor">
-    <a href="{{link}}"><img class="profile "src="./{{ asset image }}" /></a>
+    <a title="{{ name }}" href="{{link}}">
+        <img
+          class="profile"
+          alt="{{ name }}"
+          src="./{{ asset image 800}}"
+          srcset="./{{ asset image 400 }} 400w, ./{{ asset image 800 }} 800w,  ./{{ asset image 1000 }} 1000w"
+          sizes="(max-width:499px) 100vw, (min-width: 760px, max-width: 899px) 50vw, (min-width: 900px) 33vw"
+        />
+    </a>
     <div class="info">
         <h2>{{title}}</h2>
 
