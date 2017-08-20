@@ -105,7 +105,6 @@ gulp.task('index', ['assets', 'dotfiles'], function () {
     }
     handlebars.registerHelper('asset', (key,size) => {
       const assetKey = typeof size === 'number'? key.replace(/\.([jpg]{3})/, `-${size}.$1`): key;
-      console.log(key, assetKey, templateData.assets[assetKey])
       return templateData.assets[assetKey]
     })
     
